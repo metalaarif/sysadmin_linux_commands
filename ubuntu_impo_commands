@@ -1,0 +1,21 @@
+# Ubunutu SysAdmin Useful Commands
+# metalaarif
+
+# Check what application are installed in the Ubuntu Machines
+
+	apt list --installed
+	dpkg --get-selections | grep -v deinstall or grep -i install
+	dpkg --list vlc
+
+# Best way to uninstalled files would be to do following
+
+	dpkg --get-selections | grep -i unetbootin
+	apt remove unetbootin			# type everything you see when you do dpkg so everything is uninstalled.
+
+# Check which distribution is installed
+
+	lsb_release -a		# lsb_release --help to find more ways to view
+	uname -a 		# uname --help to find more	
+	cat /etc/debian_version or /etc/redhat_version 	# depending upon which distro you're using you can do that. 
+
+
